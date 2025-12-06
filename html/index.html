@@ -26,38 +26,50 @@
 <body>
     <div class="app">
 
-        <!-- cuon dau trang-->
-        <button id="cuondau"> <i class="fa-solid fa-arrow-up"> </i> </button>
-
-        <!-- Thanh dau trang-->
-        <nav class="header__nav navbar navbar-expand-lg fixed-top px-4 py-1">
+        <!-- Scroll To Top Button -->
+        <button id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+        <!-- Header Navbar by Bootstrap -->
+        <nav class="header__nav navbar navbar-expand-lg fixed-top px-4 py-1" id="globalnav">
             <div class="container">
-                <!-- LOGOOOOOOOO-->
-                <a class="header__logo navbar-brand fs-1 text-dark" href="#"><i class=" fa-brands fa-apple"></i></a>
-                <!-- SEARCHHHHHHH Gioo-->
-                <div class="header__logo fs-2">
-                    <a type="button" class="search-btn text-dark mx-3"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <a href="LINK gio hang" class="cart-btn text-dark mx-3"><i
-                            class="fa-solid fa-cart-shopping"></i></a>
+                <!-- Logo Apple -->
+                <a class="header__logo navbar-brand fs-1 text-dark" href="#"><i class="fa-brands fa-apple"></i></a>
+                <!-- Search & Cart btn-->
+                <div class="header__more fs-2">
+                    <a type="button" class="search-btn text-dark mx-3" data-bs-toggle="modal"
+                        data-bs-target="#searchModal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="https://shopdunk.com/cart" class="cart-btn text-dark mx-3">
+                        <i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
-
-                <!-- thanh nâvar-->
-                <div class="header__main collapse navbar-collapse">
+                <!-- Toggle Button for Responsive Navbar -->
+                <button class="navbar-toggler fs-2 text-dark ms-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="header__main collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link fs-4 text-dark mx-4" href="../html/iphone.html">Iphone</a>
+                            <a class="nav-link fs-4 text-dark mx-4" href="#">Trang Chủ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-4 text-dark mx-4" href="../html/ipad.html">Ipad</a>
+                            <a class="nav-link active fs-4 text-dark mx-4" aria-current="page"
+                                href="../../html/all_product/index.html">Tất cả sản
+                                phẩm</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-4 text-dark mx-4" href="............">Mac</a>
+                            <a class="nav-link fs-4 text-dark mx-4" href="../list_iphone/index.html">iPhone</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-4 text-dark mx-4" href=".............">Watch</a>
+                            <a class="nav-link fs-4 text-dark mx-4" href="../../html/list_ipad/index.html">iPad</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-4 text-dark mx-4" href=".............">Phụ Kiện</a>
+                            <a class="nav-link fs-4 text-dark mx-4" href="../../html/list_mac/index.html">Mac</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 text-dark mx-4" href="../../html/list_watch/index.html">Watch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 text-dark mx-4" href="../../html/list-pk/index.html">Phụ kiện</a>
                         </li>
                     </ul>
 
