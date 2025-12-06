@@ -1,0 +1,36 @@
+/* Cuộn lên đầu trang */
+#cuondau {
+    display: none;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 48px;
+    right: 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: background-color 0.3s;
+    z-index: 10;
+}
+
+
+#cuondau:hover {
+    background-color: #0056b3;
+}
+
+/*dau*/
+.navbar {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    backdrop-filter: saturate(180%) blur(20px);
+    background: rgba(251, 251, 253, .8);
+}
+
+.header__more i:hover,
+.auth-form-btn:hover,
+.nav-link:hover {
+    opacity: .7;
+}

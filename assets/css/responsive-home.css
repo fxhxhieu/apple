@@ -1,0 +1,22 @@
+/*hiện slide */
+@media (min-width: 992px) {
+    #carouselExampleIndicators {
+        display: block;
+    }
+
+    #carousel-nho {
+        display: none;
+    }
+
+    
+}
+
+@media (max-width: 992px) {
+    #carouselExampleIndicators {
+        display: none;
+    }
+
+    #carousel-nho {
+        display: block;
+    }
+}
