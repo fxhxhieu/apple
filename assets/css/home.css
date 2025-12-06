@@ -1,3 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins' sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Mulish', sans-serif;
+}
+
+:root {
+    --primary-blue: #0d6efd;
+    --text-color: #000;
+    --white-color: #fff;
+    --border-color: #dbdbdb;
+    --text-color: #333;
+    --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --box-shadow-hover: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    --border-radius: 20px;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f5f5f7;
+    overflow: hidden;
+}
+
 /* Cuộn lên đầu trang */
 #cuondau {
     display: none;
@@ -33,4 +65,165 @@
 .auth-form-btn:hover,
 .nav-link:hover {
     opacity: .7;
+}
+
+/* cặp iphone */
+.iphone__left {
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    /* min-height: 580px; */
+    height: 100%;
+}
+
+.iphone__left .intro {
+    text-align: center;
+}
+
+.iphone__left img {
+    width: 66%;
+    display: block;
+    margin: 0 auto;
+    border-radius: var(--border-radius);
+    transition: transform .9s;
+}
+
+.iphone__right {
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    padding: 27px 0;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    /* min-height: 580px; */
+    height: 100%;
+}
+
+.iphone__right img {
+    width: 56%;
+    border-radius: var(--border-radius);
+    transition: transform .9s;
+}
+
+.iphone__left:hover img,
+.iphone__right:hover img {
+    transform: scale(1.08);
+}
+
+.iphone__left:hover,
+.iphone__right:hover,
+.box__iphone:hover {
+    box-shadow: var(--box-shadow-hover);
+}
+
+
+.box__iphone {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    transition: transform .6s;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box__iphone:hover {
+    transform: scale(1.08);
+}
+
+.box-btn:focus {
+    box-shadow: none;
+    border: none;
+}
+/*ịp17*/
+.ios17 {
+    background: #fff url('../images/home-img/ios17__background_large.jpg') bottom no-repeat;
+    width: 100%;
+    height: 560px;
+    padding-top: 40px;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.ios17__title {
+    text-align: center;
+}
+
+.ios17:hover,
+.iphone-switch:hover,
+.iphone-security:hover {
+    box-shadow: var(--box-shadow-hover);
+}
+
+.ios17__title h3,
+.iphone-switch h3,
+.iphone-security h3 {
+    font-size: 4.6rem;
+    line-height: 4.9rem;
+    font-weight: 700;
+}
+
+.ios17__title p {
+    font-size: 2rem;
+}
+
+.iphone-switch {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 460px;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.iphone-switch h3 {
+    margin: 44px auto;
+    width: 80%;
+    z-index: 1;
+}
+
+.iphone-switch img {
+    margin-top: -10%;
+    border-radius: var(--border-radius);
+}
+
+.iphone-security {
+    background: #fff url('../images/home-img/privacy_small.jpg') no-repeat bottom;
+    min-height: 460px;
+    padding-top: 46px;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.iphone-security h3 {
+    text-align: center;
+}
+
+.apple-watch,
+.airpods,
+.ipad-air {
+    height: 400px;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    transition: transform .6s;
+}
+
+.apple-watch:hover,
+.airpods:hover,
+.ipad-air:hover {
+    transform: scale(1.08);
+}
+
+.apple-watch {
+    background: url('../images/home-img/apple-watch.jpg') no-repeat center;
+}
+
+.ipad-air {
+    background: url('../images/home-img/ipad-air.jpg') no-repeat center;
+}
+
+.airpods {
+    background: url('../images/home-img/airpods-pro.jpg') no-repeat center;
 }
