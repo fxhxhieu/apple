@@ -227,3 +227,14 @@ body {
 .airpods {
     background: url('../images/home-img/airpods-pro.jpg') no-repeat center;
 }
+
+/*video intro mac*/
+.mac__title {
+    font-size: 6.6rem;
+}
+
+.mac__slogan {
+    font-size: 2.6rem;
+    font-weight: 500;
+    line-height: 3.2rem;
+}
