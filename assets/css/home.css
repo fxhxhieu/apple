@@ -1,10 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    /* font-family: 'Poppins' sans-serif; */
-    /* font-family: 'Open Sans', sans-serif; */
-    /* font-family: 'Roboto', sans-serif; */
     font-family: 'Mulish', sans-serif;
 }
 
@@ -29,8 +25,11 @@ body {
     background-color: #f5f5f7;
     overflow: hidden;
 }
+.app {
+    margin-top: 5rem;
+}
 
-/* Cuộn lên đầu trang */
+/* cuộn đầu trang */
 #cuondau {
     display: none;
     position: fixed;
@@ -43,43 +42,39 @@ body {
     border: none;
     border-radius: 50%;
     padding: 10px 15px;
-    cursor: pointer;
     font-size: 24px;
-    transition: background-color 0.3s;
-    z-index: 10;
+    cursor: pointer;
+    transition: background-color 0.3s,
+    z-index: 10000000;
 }
-
-
-#cuondau:hover {
-    background-color: #0056b3;
+#cuondau:hover{
+    background-color: #c70e9f;
 }
-
-/*dau*/
-.navbar {
+/* phần header */
+.navbar{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     backdrop-filter: saturate(180%) blur(20px);
     background: rgba(251, 251, 253, .8);
 }
-
-.header__more i:hover,
-.auth-form-btn:hover,
-.nav-link:hover {
-    opacity: .7;
+/* phần navbar */
+.search-giohang:hover,
+.nav-link:hover,
+.loginout:hover{
+    opacity: 0.7;
 }
 
-/* cặp iphone */
-.iphone__left {
+/* 2 iphone */
+.iphone_trai {
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
-    /* min-height: 580px; */
     height: 100%;
 }
 
-.iphone__left .intro {
+.iphone_trai .intro {
     text-align: center;
 }
 
-.iphone__left img {
+.iphone_trai img {
     width: 66%;
     display: block;
     margin: 0 auto;
@@ -87,36 +82,36 @@ body {
     transition: transform .9s;
 }
 
-.iphone__right {
+.iphone_phai {
     background-color: #fafafa;
     display: flex;
     align-items: center;
-    padding: 27px 0;
+    /* padding: 27px 0; */
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
     /* min-height: 580px; */
     height: 100%;
 }
 
-.iphone__right img {
+.iphone_phai img {
     width: 56%;
     border-radius: var(--border-radius);
     transition: transform .9s;
 }
 
-.iphone__left:hover img,
-.iphone__right:hover img {
+.iphone_trai:hover img,
+.iphone_phai:hover img {
     transform: scale(1.08);
 }
 
-.iphone__left:hover,
-.iphone__right:hover,
-.box__iphone:hover {
+.iphone_trai:hover,
+.iphone_phai:hover{
     box-shadow: var(--box-shadow-hover);
 }
 
+/* 3 thiết kế */
 
-.box__iphone {
+.thietke {
     background-color: #fff;
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
@@ -128,15 +123,14 @@ body {
     justify-content: center;
 }
 
-.box__iphone:hover {
+.thietke:hover {
     transform: scale(1.08);
+    box-shadow: var(--box-shadow-hover);
 }
 
-.box-btn:focus {
-    box-shadow: none;
-    border: none;
-}
-/*ịp17*/
+
+/* ip17 và switch security */
+
 .ios17 {
     background: #fff url('../images/home-img/ios17__background_large.jpg') bottom no-repeat;
     width: 100%;
@@ -146,29 +140,29 @@ body {
     border-radius: var(--border-radius);
 }
 
-.ios17__title {
+.intro {
     text-align: center;
 }
 
 .ios17:hover,
-.iphone-switch:hover,
-.iphone-security:hover {
+.switch:hover,
+.security:hover {
     box-shadow: var(--box-shadow-hover);
 }
 
-.ios17__title h3,
-.iphone-switch h3,
-.iphone-security h3 {
+.intro h3,
+.switch h3,
+.security h3 {
     font-size: 4.6rem;
     line-height: 4.9rem;
     font-weight: 700;
 }
 
-.ios17__title p {
+.intro p {
     font-size: 2rem;
 }
 
-.iphone-switch {
+.switch {
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -178,18 +172,19 @@ body {
     border-radius: var(--border-radius);
 }
 
-.iphone-switch h3 {
+.switch h3 {
     margin: 44px auto;
     width: 80%;
     z-index: 1;
 }
 
-.iphone-switch img {
+.switch img {
     margin-top: -10%;
     border-radius: var(--border-radius);
 }
 
-.iphone-security {
+
+.security {
     background: #fff url('../images/home-img/privacy_small.jpg') no-repeat bottom;
     min-height: 460px;
     padding-top: 46px;
@@ -197,9 +192,22 @@ body {
     border-radius: var(--border-radius);
 }
 
-.iphone-security h3 {
+.security h3 {
     text-align: center;
 }
+
+/*video intro mac*/
+.mac_tieude {
+    font-size: 6.6rem;
+}
+
+.mac_slogan {
+    font-size: 2.6rem;
+    font-weight: 500;
+    line-height: 3.2rem;
+}
+
+/* danh sách lợi ích */
 
 .apple-watch,
 .airpods,
@@ -227,14 +235,122 @@ body {
 .airpods {
     background: url('../images/home-img/airpods-pro.jpg') no-repeat center;
 }
-
-/*video intro mac*/
-.mac__title {
-    font-size: 6.6rem;
+/* danh sách lợi ích */
+.benefits__list {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    display: flex;
+    padding-bottom: 20px;
+    scroll-behavior: smooth;
 }
 
-.mac__slogan {
-    font-size: 2.6rem;
+.benefits__list::-webkit-scrollbar {
+    height: 0;
+}
+
+.scroll-btn-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2%;
+    border-bottom: 2px solid #0056b3;
+}
+
+.scroll-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #dedede;
+    border-radius: 50%;
+    border: none;
+    color: #333;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.scroll-btn:hover {
+    background-color: #bbb;
+}
+
+.left-btn {
+    margin-right: 24px;
+}
+
+.right-btn {
+    margin-right: 5%;
+}
+
+.benefit__item {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    margin: 40px 20px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: transform .5s;
+}
+
+.benefit__item:hover {
+    transform: scale(1.1);
+    animation: linear .2s;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.benefit__wrap {
+    padding: 30px;
+    width: 320px;
+    height: 244px;
+}
+
+.benefit__wrap p {
+    font-size: 2.2rem;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.box-btn:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.benefit__title {
+    font-size: 4.5rem;
+    margin-left: 28px;
+    margin-top: 36px;
+}
+
+.wrap-box {
+    max-width: 800px !important;
+}
+
+.benefits-box {
+    padding: 60px 50px;
+    border-radius: 24px;
+}
+
+.benefits-box__title {
+    font-size: 2rem;
     font-weight: 500;
-    line-height: 3.2rem;
 }
+
+.benefits-box__content {
+    font-size: 5.5rem;
+    font-weight: 600;
+    line-height: 6.2rem;
+    margin-top: 12px;
+}
+
+.benefits-box__subcontent {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.modal.fade .modal-dialog {
+    transition: transform 0.8s ease;
+}
+
+.modal.show .modal-dialog {
+    transform: translate(0, 0);
+}
+
