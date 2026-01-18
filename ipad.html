@@ -12,8 +12,8 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="./ipad.css">
-    <link rel="stylesheet" href="./responsive-ipad.css">
+    <link rel="stylesheet" href="./assets/css/ipad.css">
+    <link rel="stylesheet" href="./assets/css/responsive-ipad.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -25,49 +25,63 @@
 <body>
     <div class="app">
 
-        <!-- cuon dau trang-->
-        <button id="cuondau"> <i class="fa-solid fa-arrow-up"> </i> </button>
+        
+        <!-- cuon dau trang -->
+        <button id="cuondau"> <i class="fa-solid fa-arrow-up"></i></button>
+        <header>
+            <!-- Navbar -->
+            <nav class="thanhchinh navbar navbar-expand-lg fixed-top px-4 py-1" id="navchinh">
+                <div class="container">
+                    <!-- logo -->
+                    <a class="logochinh navbar-brand fs-1 text-dark" href="#"> <i class="fa-brands fa-apple"></i></a>
+                    <!-- menu toggle -->
+                    <button class="navbar-toggler fs-2 text-dark ms-2 " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="menu collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link fs-4 text-dark mx-4" href="#">Trang Chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fs-4 text-dark mx-4"
+                                    href="../../html/all_product/index.html">Tất
+                                    cả sản
+                                    phẩm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-4 text-dark mx-4" href="./iphone.html">iPhone</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-4 text-dark mx-4" href="./ipad.html">iPad</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-4 text-dark mx-4" href="./mac.html">Mac</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-4 text-dark mx-4" href="">Watch</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-4 text-dark mx-4" href="">Phụ kiện</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- search & giohang -->
+                    <div class="search-giohang">
+                        <a type="button" class="search text-dark mx-3" href="#"><i
+                                class="fa-solid fa-magnifying-glass"></i></a>
+                        <a class="giohang text-dark mx-3" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                    <!-- đăng nhập và đăng ký -->
+                    <a href="" type="button" class="loginout text-decoration-none ms-4 fs-4">Đăng Ký</a>
+                    <a href="" type="button" class="loginout text-decoration-none ms-4 fs-4">Đăng Nhập</a>
 
-        <!-- Thanh dau trang-->
-        <nav class="header__nav navbar navbar-expand-lg fixed-top px-4 py-1" id="globalnav">
-            <div class="container">
-                <!-- LOGOOOOOOOO-->
-                <a class="header__logo navbar-brand fs-1 text-dark" href="#"><i class=" fa-brands fa-apple"></i></a>
-                <!-- SEARCHHHHHHH Gioo-->
-                <div class="header__logo fs-2">
-                    <a type="button" class="search-btn text-dark mx-3"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <a href="LINK gio hang" class="cart-btn text-dark mx-3"><i
-                            class="fa-solid fa-cart-shopping"></i></a>
                 </div>
 
-                <!-- thanh nâvar-->
-                <div class="header__main collapse navbar-collapse" id="NV">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link fs-4 text-dark mx-4" href="./iphone/iphone.html">Iphone</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-4 text-dark mx-4" href="ipad/ipad.html">Ipad</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-4 text-dark mx-4" href="............">Mac</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-4 text-dark mx-4" href=".............">Watch</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-4 text-dark mx-4" href=".............">Phụ Kiện</a>
-                        </li>
-                    </ul>
-
-                    <!-- đăng nhập và đăng ký-->
-                    <a href="link dang nhap" type="button" class=" text-dark text-decoration-none ms-4 fs-4">Đăng ký</a>
-                    <a href="link dang ky" type="button" class=" text-dark text-decoration-none ms-4 me-3 fs-4">Đăng
-                        nhập</a>
-                </div>
-            </div>
-        </nav>
-    </div>
+            </nav>
+        </header>
 
 
     <!-- THÂNNNNNNNNNNN-->
