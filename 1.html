@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="https://cdn-icons-png.flaticon.com/128/10096/10096939.png?ga=GA1.1.1782978868.1679199684&track=ais" />
+    <title>Product</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="app bg-white">
+        <!-- heder -->
+        <!-- cuon dau trang -->
+        <button id="cuondau"> <i class="fa-solid fa-arrow-up"></i></button>
+
+        <!-- Navbar -->
+        <nav class="thanhchinh navbar navbar-expand-lg fixed-top px-4 py-1" id="navchinh">
+            <div class="container">
+                <!-- logo -->
+                <a class="logochinh navbar-brand fs-1 text-dark" href="#"> <i class="fa-brands fa-apple"></i></a>
+                <!-- menu toggle -->
+                <button class="navbar-toggler fs-2 text-dark ms-2 " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="menu collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 text-dark mx-4" href="./index.html">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-4 text-dark mx-4" href="../../html/all_product/index.html">Tất
+                                cả sản
+                                phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 text-dark mx-4" href="../list_iphone/index.html">iPhone</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 text-dark mx-4" href="../../html/list_ipad/index.html">iPad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 text-dark mx-4" href="../../html/list_mac/index.html">Mac</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 text-dark mx-4" href="../../html/list_watch/index.html">Watch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 text-dark mx-4" href="../../html/list-pk/index.html">Phụ kiện</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- search & giohang -->
+                <div class="search-giohang">
+                    <a type="button" class="search text-dark mx-3" href="#"><i
+                            class="fa-solid fa-magnifying-glass"></i></a>
+                    <a class="giohang text-dark mx-3" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <!-- đăng nhập và đăng ký -->
+                <a href="" type="button" class="loginout text-decoration-none ms-4 fs-4">Đăng Ký</a>
+                <a href="" type="button" class="loginout text-decoration-none ms-4 fs-4">Đăng Nhập</a>
+
+            </div>
+
+        </nav>
+
+        <!-- end heder -->
+
+        <!-- body -->
+        <div class=" container container_main " style="margin-top: 5rem; position: relative;">
+            <div class="row sanpham justify-content-center">
+                <!-- link san pham -->
+                <ul class="sanpham_link p-3 m-0 d-flex text-secondary align-items-center border-bottom list-unstyled"
+                    style="font-weight: 1500 ;">
+                    <li class="sanpham_item me-2 list-unstyled">
+                        Apple
+                        <i class=" fa-solid fa-chevron-right fs-5"></i>
+                    </li>
+                    <li class="sanpham_item me-2 list-unstyled">
+                        Điện thoại
+                        <i class=" fa-solid fa-chevron-right fs-5"></i>
+                    </li>
+                    <li class="sanpham_item me-2 list-unstyled">
+                        <a class="text-decoration-none text-success" href="">Iphone 15</a>
+                    </li>
+                </ul>
+                <!-- san pham -->
+                <div class="sanpham_ct row mt-3">
+
+                    <div class="sanpham_img col-lg-6">
+                        <div class="my-3 box_img " style="position: relative;">
+                            <a class="switch switch_left" href="#anh" data-bs-slide="prev">
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </div>
+                            </a>
+                            <a class="switch switch_right " href="#anh" data-bs-slide="next">
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </a>
+                            <!-- Carousel -->
+                            <div id="anh" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+
+                                    <div class="carousel-item active">
+                                        <img src="./assets/images/1/carouse1.jpeg"
+                                            class="d-block w-100" alt="Slide 1">
+
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/images/1/carouse2.jpeg"
+                                            class="d-block w-100" alt="Slide 2">
+
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/images/1/carouse3.jpeg"
+                                            class="d-block w-100" alt="Slide 3">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tt_sanpham col-lg-6 mt-3 ps-5">
+                        <div class="tt_sanpham_title p-0 align-items-center border-bottom pb-3">
+                            <h2 class="ten_sanpham m-0 p-0 me-4 fs-1 pb-2 fw-bold">iPhone 15 Pro Max
+                            </h2>
+
+                            <div class="sanpham_danhgia d-flex align-items-center fs-4">
+                                <div class="5sao d-inline-block me-2">
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                </div>
+                                <p class="sanpham_sodg d-inline-block m-0"><a class="text-decoration-none" href="">13
+                                        đánh giá</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sanpham_gia d-flex align-items-center mt-4">
+                            <span class=" giasale fs-1 text-primary fw-bold me-2">26.5150.000₫</span>
+                            <span class="giacu fs-2">34.990.000₫</span>
+                        </div>
+                        <div class="sanpham_luachon">
+                            <p class="sanpham_luachon-title my-3 fs-3">Dung lượng</p>
+                            <ul class="sanpham_luachon--list p-0 ">
+                                <li class="dungluong d-inline-block  me-3 fs-4  active1">
+                                    128GB
+                                </li>
+                                <li class="dungluong d-inline-block  me-3 fs-4  ">
+                                    256GB
+                                </li>
+                                <li class="dungluong d-inline-block  me-3 fs-4  ">
+                                    512GB
+                                </li>
+                                <li class="dungluong d-inline-block  me-3 fs-4  ">
+                                    1T</li>
+                            </ul>
+                        </div>
+                        <div class="sanpham_mau_box mb-4">
+                            <p class="sanpham_mau_title fs-3">Màu sắc</p>
+                            <ul class="sanpham_mau_list m-0 p-0">
+                                <li class="mausac p-1 me-2 white list-unstyled d-inline-block border border-color border-3 "
+                                    data-name="White">
+                                </li>
+                                <li class="mausac p-1 me-2 yellow list-unstyled d-inline-block" data-name="Yellow">
+
+                                </li>
+                                <li class="mausac p-1 me-2 black list-unstyled d-inline-block" data-name="Black">
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <div class="ps-4 fs-5">
+                                <h4 class="my-2" style="color: rgb(214, 75, 57);">
+                                    :Ưu đãi mua kèm iPhone 15 series
+                                </h4>
+                                <div class="py-1">
+                                    <img src="./assets/images/1/sticker1.gif" alt=""
+                                        width="20" height="20" class="mx-1">
+                                    <span>Mua kèm giảm sâu phụ kiện Apple</span> <br>
+                                </div>
+                                <div class="py-1">
+                                    <img src="./assets/images/1/sticker1.gif" alt=""
+                                        width="20" height="20" class="mx-1">
+                                    <span> Mua kèm giảm sâu phụ kiện Non Apple </span> <br>
+                                </div>
+                                <div class="py-1">
+                                    <i class="fa-solid fa-circle-check mx-1" style="color: limegreen;"></i>
+                                    <span> Giảm 10% khi mua Bảo hành tiêu chuẩn mở rộng (6 tháng, 12 tháng) </span>
+                                    <br>
+                                </div>
+                                <div class="py-1">
+                                    <i class="fa-solid fa-circle-check mx-1" style="color: limegreen;"></i>
+                                    <span> Giảm 20% khi mua Bảo hành kim cương, Bảo hành VIP (Rơi vỡ, vào
+                                        nước)</span> <br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sanpham_mua mt-3">
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-origin bg-success py-4 fs-4 text-white mb-2"
+                                    style="border-radius: 1rem ;" type="button">MUA
+                                    NGAY</button>
+                                <div class="d-flex">
+                                    <button type="button" class="btn btn-primary btn-lg  fs-4 py-4 me-2"
+                                        style="border-radius: 1rem ;flex: 1;">Trả
+                                        Góp</button>
+                                    <button type="button" class="btn btn-primary btn-lg  fs-4 py-4 ms-2"
+                                        style="border-radius: 1rem ;flex: 1">Thu
+                                        Cũ Đổi Mới</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container_nd" style="margin-top: 10rem;">
+                    <div class="text-center">
+                        <button type="button" class="btn btn-outline-primary"
+                            style="padding: 0.7rem 3rem ; font-size: 1.5rem; font-weight: 1500; border-radius: 0.5rem;">Mô
+                            tả sản phẩm</button>
+                    </div>
+                    <!-- nội dung chính -->
+                    <div class="nd mx-auto " style="width: 90%;">
+                        <div class=" text-center" style="font-size: 4.5rem;font-weight: 1500; margin-top: 3rem;">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>iPhone</span>
+                        </div>
+                        <!-- Dymanic -->
+                        <div class="row Dynamicd d-flex align-items-center " style="margin-top: 10rem;">
+                            <h2 class=" hieuung col-sm-12 col-md-6 col-tg-6 Dynamic_title  d-flex align-items-center">
+                                Dynamic Island đưa thông tin quan trọng lên đầu.
+                            </h2>
+                            <div class="col-sm-12 col-md-6 col-tg-6 text-center pe-5">
+                                <img src="./assets/images/1/Dy.png"
+                                    alt="" class=" Dynamic_img " style="width: 65% !important;">
+                            </div>
+                        </div>
+                        <!-- Thiet ke -->
+                        <div class="row justify-content-between" style="margin-top: 5rem;">
+                            <div class="thietke_1 col-sm-12 col-md-6 " >
+                                <div class="row bg_thietke px-5">
+                                    <p class="col-12 thietke_1_title hieuung fw-bold text-center mt-5"
+                                        style="opacity: 0.8;font-size: 3rem;">Thiết kế bằng kính pha màu <br> và nhôm
+                                        bền bỉ.
+                                    </p>
+                                    <img src="./assets/images/1/thietke1.png"
+                                        alt="" class="thietke_1_img my-5" style="width: 80%;">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6  thietke_2 ps-4">
+                                <div class="row bg_thietke align-items-center px-4 justify-content-center pt-5 align-items-center">
+                                    <div class="col-6 fs-1 fw-bolder text-center" style="opacity: 0.8;">
+                                        <p class="thietke_2_title hieuung">6,7″</p>
+                                        <p class="thietke_2_title hieuung">iPhone 15 Plus</p>
+                                    </div>
+                                    <div class="col-6 fs-1 fw-bolder text-center" style="opacity: 0.8;">
+                                        <p class="thietke_2_title hieuung">6,1″</p>
+                                        <p class="thietke_2_title hieuung">iPhone 15</p>
+                                    </div>
+                                    <img src="./assets/images/1/thietke1.png"
+                                        alt="" class="col-12 thietke_2_img py-5 mx-auto" style="width: 40%;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Camera -->
+                        <div class="row camera " style="margin-top: 5rem;">
+                            <div class="col-sm-12 col-md-8 camera_1 p-0 pe-2">
+                                <div class="bg_camera" style="position: relative;">
+                                    <img src="./assets/images/1/camera1.jpg"
+                                        alt="" class="camera_1_img" style="width: 100%; border-radius: 2rem;">
+                                    <div class="camera1_text  text-center position text-light fw-bold"
+                                        style="position: absolute; top: 3rem;; width: 100%;">
+                                        <p class=" fw-bold mb-3" style="font-size: 4rem;">Camera Chính 48MP</p>
+                                        <p class=" thietke_2_title hieuung" style="font-size: 4rem;">Ảnh có độ phân giải
+                                            siêu cao.
+                                            <br> Telephoto 2x.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 camera_2 p-0 ps-2">
+                                <div class="camera_2 text-end bgg" style="overflow: hidden;">
+                                    <div class="camera_2_text py-4 px-4 fs-1 fw-bolder text-center"
+                                        style="opacity: 0.8;">
+                                        Ảnh chân dung <br>
+                                        thế hệ mới.</div>
+                                    <img src="./assets/images/1/camera2.png"
+                                        alt="" class="thietke_2_title hieuung " width="80%">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- PINNNN -->
+                        <div class="row col-12 pin px-4 justify-content-center align-items-center bgg"
+                            style="margin-top: 5rem;">
+                            <div class="pin_title_top hieuung fs-1 fw-bold text-center">
+                                Pin dùng cả ngày. <br>Cứ tiếp tục làm mọi việc bạn muốn.
+                            </div>
+                            <div class="col-2 " style="opacity: 0.6; ">
+                                <p class="pin_title_left hieuung text-center fs-3">Lên đến <br>26 giờ
+                                    <br>thời gian xem video trên iPhone 15 Plus.
+                                </p>
+                            </div>
+                            <div class="col-8 product__battery--img">
+
+                                <div class="x-img-box">
+                                    <img src="./assets/images/1/pin.png" class="py-5 pin_img hieuung"
+                                        style="width: 100%;">
+                                </div>
+
+                            </div>
+                            <div class="col-2 text-center fs-3 " style="opacity: 0.6;">
+                                <p class="pin_title_right hieuung">Lên đến <br>26 giờ
+                                    <br>thời gian chơi game trên iPhone 15 Plus.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- CHIPP -->
+                        <div class="row chip justify-content-between" style="margin-top: 5rem; ">
+                            <div class="chip_1 col-sm-12 col-md-6 col-lg-4 p-0 pe-2">
+                                <div class="bgg text-center px-5 py-4">
+                                    <p class="m-0 mb-1 fs-2 pt-5" style=" color: #767676; ">
+                                        Chip A16 Bionic
+                                    </p>
+                                    <p class="chip_1_title hieuung fs-1 fw-bold m-0 px-5">
+                                        Sức mạnh Pro đã được kiểm chứng.
+                                    </p>
+                                    <img src="./assets/images/1/chip1.png"
+                                        alt="" class="chip_1_img" style="width: 100%;">
+                                </div>
+                            </div>
+                            <div class="chip_2 col-sm-12 col-md-6 col-lg-8 p-0 ps-2">
+                                <div class="bgg text-center p-0 pt-5">
+                                    <p class="text-center fs-1 fw-bold" style="opacity: 0.8;">
+                                        Sạc dễ dàng <br> với cổng USB-C.
+                                    </p>
+                                    <img src="./assets/images/1/chip2.png"
+                                        alt="" class="chip_2_img hieuung" style="width: 100%;">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- cc -->
+                        <div class="text-center fw-bold" style="font-size: 3rem; opacity: 0.8; margin-top: 5rem;">Được
+                            Thiết kế để tạo nên khác biệt.
+                        </div>
+                        <!-- QUYỀN RIÊNG TƯ -->
+                        <div class="row text-center justify-content-center bgg" style=" margin-top: 5rem;">
+                            <div class="py-3 pt-5" style="font-size: 4rem; ">
+                                <i class="fa-brands fa-apple"></i>
+                            </div>
+                            <div class="fs-1 fs-1 fw-bold mb-2" style="opacity: 0.9;">
+                                Quyền riêng tư được tích hợp sẵn.
+                            </div>
+                            <p class="hieuung thietke_1_title fs-4 mb-5 text-secondary">
+                                Từ Mã Khóa đến Báo Cáo Quyền Riêng Tư<br>
+                                đến ứng dụng Sức Khoẻ, iPhone cho bạn <br>
+                                quyền kiểm soát những gì mình chia sẻ.
+                            </p>
+                            <img src="./assets/images/1/qua.png"
+                                alt="" style="width: 40%;">
+
+                        </div>
+                        <!-- CC -->
+                        <div class="text-center fw-bold" style="font-size: 3rem; opacity: 0.8; margin-top: 5rem;">Được
+                            Nâng cấp dễ dàng <br> Chuyển đổi đơn giản
+                        </div>
+                        <!-- DOII -->
+                        <div class="row doi" style="margin-top: 5rem;">
+                            <div class="col-6">
+                                <div class="bgg d-flex flex-column justify-content-center text-center"
+                                    style="min-height: 30rem; padding: 3rem 5rem;">
+                                    <i class="fa-solid fa-repeat fs-1 text-primary"></i>
+                                    <p class="fs-2 fw-bold mt-3" style="opacity: 0.8;">Chuyển sang iPhone?</p>
+                                    <p class="fs-3 m-0 text-justify text-secondary">Bạn chỉ cần đặt iPhone cũ cạnh
+                                        iPhone mới,
+                                        và với vài cú chạm, bạn có thể chuyển dữ liệu của mình hoàn toàn tự động.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="bgg d-flex flex-column justify-content-center text-center"
+                                    style="min-height: 30rem; padding: 3rem 5rem;">
+                                    <i class="fa-solid fa-arrow-up-right-dots fs-1 text-primary"></i>
+                                    <p class="fs-2 fw-bold mt-3" style="opacity: 0.8;">Nâng cấp từ iPhone cũ</p>
+                                    <p class="fs-3 m-0 text-justify text-secondary">Khi bạn mua một chiếc iPhone mới,
+                                        ứng dụng chuyển sang IOS sẽ giúp bạn dễ dàng chuyển ảnh, danh bạ WhatsApp và
+                                        nhiều hơn nữa.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Qua -->
+                    <div class="more container-fluid p-0" style="margin-bottom: 5rem;">
+                        <div class="qua bgg container" style="margin-top: 5rem; padding-bottom: 5rem;">
+                            <div class="more mx-auto" style="width: 80%;">
+                                <div class="text-center mx-auto fw-bold"
+                                    style="font-size: 3rem; opacity: 0.8; padding-top: 5rem;">
+                                    Vẫn còn nhiều món quà đáng yêu
+                                </div>
+                                <div class="row bg-white phukien justify-content-between align-items-center"
+                                    style="margin-top: 5rem; border-radius: 2rem;">
+                                    <div class="phukien_1 col-sm-12 col-md-6 text-center px-5" style="font-size: 3rem;">
+                                        <p class=" fw-bold" style="opacity: 0.8;">Phụ kiện MagSafe
+                                        </p>
+                                        <p class="qua_title hieuung fw-bold">
+                                            Gắn thêm một ốp lưng, một ví da từ tính hay cả hai.
+                                        </p>
+                                        <p class=" fs-3" style="opacity: 0.8">
+                                            Một hệ sinh thái phụ kiện đầy
+                                            màu sắc, gắn kết dễ dàng và sạc không dây nhanh hơn.
+                                            Với vô số cách phối, phong cách nào cũng có một bộ phụ kiện phù hợp.
+                                        </p>
+                                    </div>
+                                    <div class="pt-5 col-sm-12 col-md-6 px-5">
+                                        <img src="./assets/images/1/qua.png"
+                                            alt="" style="width: 100%;">
+
+                                    </div>
+
+
+                                </div>
+                                <!-- TRACH NHIEM -->
+                                <div class="phapli fs-5 text-secondary  hieuung" style="margin-top: 5rem;">
+                                    <div class="fs-4 fw-bold text-black"> Từ Chối
+                                        Trách Nhiệm Pháp Lý.
+                                    </div>
+                                    <br>
+                                    <p class="phapli_title hieuung"> Màn hình
+                                        có các góc bo tròn theo đường cong tuyệt đẹp và
+                                        nằm gọn theo một hình chữ nhật chuẩn. Khi tính theo hình chữ nhật chuẩn, kích
+                                        thước
+                                        màn hình theo đường chéo là 5,42 inch (iPhone 13 mini, iPhone 12 mini), 5,85
+                                        inch
+                                        (iPhone 11 Pro,iPhone X , iPhone X), 6,06 inch (iPhone 14, iPhone 13 Pro, iPhone
+                                        13, iPhone 12
+                                        Pro, iPhone 12, iPhone 11, iPhone X ), 6,12 inch (iPhone 15 Pro, iPhone 15,
+                                        iPhone 14
+                                        Pro), 6,46 inch (iPhone 11 Pro Max, iPhone X Max), 6,68 inch (iPhone 14 Plus,
+                                        iPhone 13 Pro
+                                        Max, iPhone 12 Pro Max), hoặc 6,69 inch (iPhone 15 Pro Max, iPhone 15 Plus,
+                                        iPhone 14 Pro
+                                        Max). Diện tích hiển thị thực tế nhỏ hơn.</p>
+                                    <br>
+                                    <p class="phapli_title hieuung">Pin Và Nguồn Điện: Tất cả các xác nhận về thời
+                                        lượng pin phụ thuộc vào cấu hình mạng và nhiều yếu tố khác; các kết quả thực tế
+                                        sẽ
+                                        khác nhau. Pin có giới hạn chu kỳ sạc và cuối cùng có thể cần được thay thế.
+                                        Thời lượng
+                                        pin và chu kỳ sạc khác nhau tùy theo cách sử dụng và cài đặt. Truy cập
+                                    </p>
+                                    <br>
+                                    <p class="phapli_title hieuung"> Cáp Sạc USB-C đi kèm các phiên bản iPhone 5
+                                        tương thích với AirPods Pro (thế hệ thứ 2) có Hộp Sạc MagSafe (USB-C).
+                                        <br><br>
+                                        Yêu cầu cáp USB 3 với tốc độ 10Gb/s để đạt tốc độ truyền nhanh hơn đến 20x
+                                        trên các phiên bản iPhone 15 Pro.
+                                    </p>
+                                    <br>
+                                    <p class="phapli_title hieuung">Mạng Di Động Và Không Dây: Cần có gói cước dữ liệu.
+                                        Mạng 5G và LTE chỉ khả dụng ở một số thị trường và được cung cấp qua một số nhà
+                                        mạng.
+                                        Tốc độ phụ thuộc vào thông lượng lý thuyết và có thể thay đổi tùy địa điểm và
+                                        nhà
+                                        mạng.Để biết thông tin về hỗ trợ mạng 5G và LTE, vui lòng liên hệ nhà mạng và
+                                        truy cập
+                                    </p>
+                                    <br>
+                                    <p class="phapli_title hieuung"> Các màu chỉ nhằm mục đích minh họa. Phụ kiện
+                                        MagSafe được bán riêng.
+
+                                    </p>
+                                    <br>
+                                    <p class="phapli_title hieuung">Ưu Đãi Apple TV+: Chỉ dành cho thuê bao mới và
+                                        thuê bao đã từng sử dụng đủ điều kiện. 179.000đ/tháng cho đến khi bị hủy. Một ưu
+                                        đãi
+                                        cho mỗi ID Apple và nhóm Chia Sẻ Trong Gia Đình. Có áp dụng các điều khoản; vui
+                                        lòng
+                                        truy cập
+                                    </p>
+                                    <br>
+                                    <p class="phapli_title hieuung">Tính Năng Khả Dụng: Một số tính năng không khả dụng
+                                        tại
+                                        một số quốc gia hoặc khu vực.
+                                    </p>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+<!-- 
+    <div class="n"></div> -->
+    <!-- FOOTER -->
+
+    <div class="container thanh mt-5 " style="">
+        <footer class="text-center text-lg-start text-dark ">
+            <div class="container pb-0">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                        <h5 class="mb-3 fs-3 fw-bold"><i class="fa-brands fa-apple"></i> APPLE Inc.</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Giới thiệu</a></li>
+                            <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Liên hệ</a></li>
+                            <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Trợ giúp</a></li>
+                            <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                        <h5 class="mb-3 fs-3 fw-bold text-uppercase">sản phẩm</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Tất cả sản phẩm</a>
+                            </li>
+                            <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">iPhone</a></li>
+                            <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">iPad</a></li>
+                            <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Mac</a></li>
+                            <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Watch</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                        <h5 class="mb-3 fs-3 fw-bold text-uppercase">phụ kiện</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">AirPods</a></li>
+                            <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Apple Pencil</a></li>
+                            <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Apple TV</a></li>
+                            <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Sạc USB-C</a></li>
+                            <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Màn hình</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                        <h5 class="mb-3 fs-3 fw-bold text-uppercase">chính sách</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Quyền riêng tư</a>
+                            </li>
+                            <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Bảo mật</a></li>
+                            <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Pháp lý</a></li>
+                            <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Bản quyền</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="mb-2 mt-5" />
+            </div>
+            <!-- Copyright-->
+            <div class="text-center fs-5 p-4">
+                © 2025 Copyright:
+                <a class="text-secondary" href="https://www.apple.com/vn/">Apple.com/vn</a>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/js.js"></script>
+</body>
+
+</html>

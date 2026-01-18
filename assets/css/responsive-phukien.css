@@ -1,0 +1,40 @@
+@media (max-width: 768px) {
+    .timkiem {
+        padding: 30px 16px;
+    }
+
+    .thanh_timkiem {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .timkiem h2 {
+        font-size: 20px;
+    }
+
+    .thanh_timkiem input {
+        padding: 14px 36px;
+        font-size: 14px;
+    }
+
+    .thanh_timkiem i {
+        left: 12px;
+    }
+}
+
+/* tab */
+@media (max-width: 768px) {
+    .ul_tab {
+        gap: 15px;
+    }
+    
+    .tab_item {
+        flex: 0 0 28%; 
+    }
+    
+    .tab img {
+        width: 60px;
+        height: 60px;
+    }
+}

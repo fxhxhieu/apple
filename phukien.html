@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phu kien</title>
+
+    <link rel="stylesheet" href="./assets/css/phukien.css">
+    <link rel="stylesheet" href="./assets/css/responsive-phukien.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="app">
+        <!-- vung banner -->
+        <div class="banner">
+            <div class="noidung">
+                <h1>Lựa Chọn Cho Tết</h1>
+                <a href="#" class="nut_mua">Mua <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="anh_banner">
+                <img src="./assets/images/phukien-img/banner.png" alt="#!">
+            </div>
+        </div>
+
+        <!-- vùng tim kiem -->
+        <div class="timkiem">
+            <h2>Tìm nội dung mong muốn</h2>
+            <div class="thanh_timkiem">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Tìm kiếm phụ kiện">
+            </div>
+        </div>
+
+        <!-- các tab -->
+        <div class="cac_tab">
+            <button class="tab_btn active" onclick="chuyen_tab(event, 'tab_sp')">Duyệt theo sản phẩm</button>
+            <button class="tab_btn" onclick="chuyen_tab(event, 'tab_tl')">Xem Theo Thể Loại</button>
+        </div>
+
+        <div class="cac_tab">
+            <div class="tab_menu">
+                <ul class="ul_tab tab_sp">
+                    <li class="tab_item">
+                        <a href="#" class="a_tab">
+                            <div class="tab">
+                                <img src="./assets/images/phukien-img/tab_airpod.png" alt="">
+                                <p>Mac</p>
+                            </div>
+                        </a>
+                        
+                    </li>
+                    <li class="tab_item">
+                        <a href="#" class="a_tab">
+                            <div class="tab">
+                                <img src="./assets/images/phukien-img/tab_bea.png" alt="">
+                                <p>Mac</p>
+                            </div>
+                        </a>
+                        
+                    </li>
+                    <li class="tab_item">
+                        <a href="#" class="a_tab">
+                            <div class="tab">
+                                <img src="./assets/images/phukien-img/tab_airpod.png" alt="">
+                                <p>Mac</p>
+                            </div>
+                        </a>
+                        
+                    </li>
+                    <li class="tab_item">
+                        <a href="#" class="a_tab">
+                            <div class="tab">
+                                <img src="./assets/images/phukien-img/tab_airpod.png" alt="">
+                                <p>Mac</p>
+                            </div>
+                        </a>
+                        
+                    </li>
+                    <li class="tab_item">
+                        <a href="#" class="a_tab">
+                            <div class="tab">
+                                <img src="./assets/images/phukien-img/tab_airpod.png" alt="">
+                                <p>Mac</p>
+                            </div>
+                        </a>
+                        
+                    </li><li class="tab_item">
+                        <a href="#" class="a_tab">
+                            <div class="tab">
+                                <img src="./assets/images/phukien-img/tab_airpod.png" alt="">
+                                <p>Mac</p>
+                            </div>
+                        </a>
+                        
+                    </li><li class="tab_item">
+                        <a href="#" class="a_tab">
+                            <div class="tab">
+                                <img src="./assets/images/phukien-img/tab_airpod.png" alt="">
+                                <p>Mac</p>
+                            </div>
+                        </a>
+                        
+                    </li><li class="tab_item">
+                        <a href="#" class="a_tab">
+                            <div class="tab">
+                                <img src="./assets/images/phukien-img/tab_airpod.png" alt="">
+                                <p>Mac</p>
+                            </div>
+                        </a>
+                        
+                    </li><li class="tab_item">
+                        <a href="#" class="a_tab">
+                            <div class="tab">
+                                <img src="./assets/images/phukien-img/tab_airpod.png" alt="">
+                                <p>Mac</p>
+                            </div>
+                        </a>
+                        
+                    </li>
+                </ul>
+                <ul class="ul_tab tab_tl">
+                    <li class="tab_item">
+                        <a href="#" class="a_tab">
+                            <div class="tab">
+                                <img src="./assets/images/phukien-img/tab_airpod.png" alt="">
+                                <p>Mac</p>
+                            </div>
+                        </a>
+                        
+                    </li>
+                    <li class="tab_item">
+                        <a href="#" class="a_tab">
+                            <div class="tab">
+                                <img src="./assets/images/phukien-img/tab_bea.png" alt="">
+                                <p>Mac</p>
+                            </div>
+                        </a>
+                        
+                    </li>
+                    <li class="tab_item">
+                        <a href="#" class="a_tab">
+                            <div class="tab">
+                                <img src="./assets/images/phukien-img/tab_airpod.png" alt="">
+                                <p>Mac</p>
+                            </div>
+                        </a>
+                        
+                    </li>
+                    <li class="tab_item">
+                        <a href="#" class="a_tab">
+                            <div class="tab">
+                                <img src="./assets/images/phukien-img/tab_airpod.png" alt="">
+                                <p>Mac</p>
+                            </div>
+                        </a>
+                        
+                    </li>
+                    <li class="tab_item">
+                        <a href="#" class="a_tab">
+                            <div class="tab">
+                                <img src="./assets/images/phukien-img/tab_airpod.png" alt="">
+                                <p>Mac</p>
+                            </div>
+                        </a>
+                        
+                    </li><li class="tab_item">
+                        <a href="#" class="a_tab">
+                            <div class="tab">
+                                <img src="./assets/images/phukien-img/tab_airpod.png" alt="">
+                                <p>Macccccccccccc</p>
+                            </div>
+                        </a>
+                        
+                    </li><li class="tab_item">
+                        <a href="#" class="a_tab">
+                            <div class="tab">
+                                <img src="./assets/images/phukien-img/tab_airpod.png" alt="">
+                                <p>Mac</p>
+                            </div>
+                        </a>
+                        
+                    </li><li class="tab_item">
+                        <a href="#" class="a_tab">
+                            <div class="tab">
+                                <img src="./assets/images/phukien-img/tab_airpod.png" alt="">
+                                <p>Mac</p>
+                            </div>
+                        </a>
+                        
+                    </li><li class="tab_item">
+                        <a href="#" class="a_tab">
+                            <div class="tab">
+                                <img src="./assets/images/phukien-img/tab_airpod.png" alt="">
+                                <p>Mac</p>
+                            </div>
+                        </a>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <script src="./assets/js/phukien.js"></script>
+</body>
+
+</html>

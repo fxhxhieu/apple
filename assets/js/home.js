@@ -1,6 +1,6 @@
 // CUON LEN DAAU TRANNG
 
-const scrollToTopBtn = document.getElementById('cuondau');
+const cuondau = document.getElementById('cuondau');
 
 window.addEventListener('scroll', () => {
     if (window.pageYOffset > 100) {

@@ -1,0 +1,440 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f5f5f7;
+}
+
+:root {
+    --primary-blue: #0d6efd;
+    --text-color: #000;
+    --white-color: #fff;
+    --border-color: #dbdbdb;
+    --text-color: #333;
+    --primary-purple: #751FFF;
+    --blue-color: #06c;
+    --line-color: #ddd;
+    --color-old: #959595;
+    --black-color: #000;
+    --background--banner: #f5f5f7;
+
+    
+    --box-shadow: rgba(67, 67, 67, 0.24) 0px 3px 8px;
+    --box-shadow-hover: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.active1 {
+    color: var(--blue-color);
+    border: 2px solid var(--primary-blue) !important;
+    background-color: var(--blue-color);
+    color: white !important;
+}
+/* cuộn đầu trang */
+#cuondau {
+    display: none;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 48px;
+    right: 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 10000000;
+}
+
+#cuondau:hover{
+    background-color: #c70e9f;
+}
+/* NABAR */
+
+.navbar{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    backdrop-filter: saturate(180%) blur(20px);
+    background: rgba(251, 251, 253, .8);
+}
+/* phần navbar */
+.search-giohang:hover,
+.nav-link:hover,
+.loginout:hover{
+    opacity: 0.7;
+}
+/* mau sac */
+
+.black {
+    background-color: var(--black-color);
+    opacity: 0.8;
+    box-shadow: inset 1px 1px 2px rgb(0 0 0 / 10%);
+}
+
+.white {
+    background-color: var(--line-color);
+    opacity: 0.8;
+    box-shadow: inset 1px 1px 2px rgb(0 0 0 / 10%);
+}
+
+
+.yellow {
+    background-color: #e9dfa7;
+    opacity: 0.8;
+    box-shadow: inset 1px 1px 2px rgb(0 0 0 / 10%);
+}
+/* MAU SAC */
+
+.mausac.border-color {
+    border: 2px solid #0066cc !important;
+    padding: 2px;
+    background-clip: content-box;
+}
+
+.border-3 {
+    border-width: 3px !important;
+}
+
+.mausac:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* body */
+/* link san pham    */
+/* sanpham */
+.box_img {
+    border: 2rem solid #f6f7f7;
+    border-radius: 1.5rem;
+    padding: 0;
+}
+.sanpham_img {
+    overflow: hidden; 
+}
+
+.box_img {
+    position: relative;
+    background-color: #fff;
+    border-radius: 1.5rem;
+}
+
+.switch {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    text-decoration: none;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.switch_left {
+    left: 1.5rem;
+}
+
+.switch_right {
+    right: 1.5rem;
+}
+
+.box_img:hover .switch {
+    opacity: 1;
+}
+
+.switch .icon-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    color: #333;
+    font-size: 1.6rem;
+}
+
+.switch:hover .icon-box {
+    background-color: #fff;
+    color: #000;
+}
+
+#anh .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    padding: 2rem;
+}
+
+/* Media Query cho thiết bị di động */
+@media (max-width: 991px) {
+    .sanpham_img {
+        padding:0;
+    }
+    
+    .switch {
+        opacity: 0.8;
+    }
+    
+    .switch .icon-box {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+
+/* GIA TIEN */
+.giasale {
+    color: var(--primary-blue);
+    font-weight: 700;
+}
+
+.giacu {
+    text-decoration: line-through;
+    color: #86868b;
+    font-size: 2rem;
+}
+
+/* Dung LUong */
+.dungluong {
+    padding: 1.5rem 3rem;
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-bottom: 20px;
+}
+
+.dungluong.active1 {
+    border-color: var(--primary-blue);
+    border-width: 2px;
+}
+
+.mausac {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.border-color {
+    border: 3px solid var(--primary-blue) ;
+}
+
+/* Dynamic */
+.Dynamicd{
+    background-color: rgb(245, 245, 247);
+    border-radius: 20px;
+   
+}
+
+.Dynamic_title {
+    font-size: 4.8rem;
+    font-weight: 700;
+    padding-left: 5rem;
+}
+/* HIỆU ỨNG CHẠY CHỮ LÊN */
+.hieuung {
+    transition-delay: 0.3s;
+}
+
+.Dynamic_title {
+    opacity: 0;
+    transform: translateY(70px);
+    transition: opacity 1.5s ease, transform 0.9s ease;
+}
+
+.Dynamic_title.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 739px) {
+    /* Giảm khoảng cách phía trên trên mobile */
+    .product__description--display {
+        margin-top: 5rem !important;
+    }
+
+    /* Chỉnh lại cỡ chữ nhỏ hơn để không bị tràn màn hình */
+    .product__description--display--title {
+        font-size: 2.8rem !important;
+        padding-left: 1.5rem !important; /* Giảm padding trái */
+        text-align: center; /* Căn giữa chữ trên mobile */
+    }
+
+    /* Phóng to ảnh ra một chút trên mobile (75% thay vì 65%) */
+    .product__description--display--img {
+        width: 75% !important;
+        margin-top: 2rem !important; /* Đẩy ảnh xuống dưới chữ */
+    }
+}
+
+/* THIETKE_1 */
+.bgg,
+.bg_thietke{
+    background-color:rgb(245, 245, 247);
+    border-radius: 20px; ;
+}
+.thietke_1_title {
+    opacity: 0;
+    transform: translateX(-70px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.thietke_1_title.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* THIETKE 2 */
+
+
+
+.thietke_2_img {
+    width: 40%;
+    display: block;
+    object-fit: contain;
+}
+.thietke_2_title {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.thietke_2_title.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* .thietke_2_title {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.thietke_2_title.show {
+    opacity: 1;
+    transform: translateY(0);
+} */
+
+/* CAMERA */
+.camera_1_img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 2rem;
+}
+
+.camera_1_title{
+    opacity: 0;
+    transform: translateY(70px);
+    transition: opacity 2.0s ease, transform 0.9s ease;
+}
+
+.camera_1_title.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* PINNN */
+
+.pin_title_top {
+    opacity: 0;
+    transform: translateY(-70px);
+    transition: opacity 1.5s ease, transform 0.9s ease;
+}
+.pin_title_top.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.pin_title_left {
+    opacity: 0;
+    transform: translateX(-70px);
+    transition: opacity 1.5s ease, transform 0.9s ease;
+}
+
+.pin_title_right {
+    opacity: 0;
+    transform: translateX(70px);
+    transition: opacity 1.5s ease, transform 0.9s ease;
+}
+
+
+.pin_title_left.show,
+.pin_title_right.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.pin_img {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.pin_img.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* CHIPPPPPPP */
+.chip_1_title,
+.chip_2_img {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.chip_1_title.show,
+.chip_2_img.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* QUA */
+.phapli_title,
+.qua_title {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.phapli_title.show,
+.qua_title.show {
+    opacity: 0.7;
+    transform: translateY(0);
+}
+
+.qua{
+    background-color: rgb(245, 245, 247);
+}
+.n{
+    height: 2px;
+    width: 100vw;
+    background-color: #0056b3;
+}
+
+/* hover */
+.bgg,
+.bg_thietke,
+.Dynamicd{
+ cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: var(--box-shadow);
+}
+.bgg:hover,
+.bg_thietke:hover,
+.Dynamicd:hover{
+    transform: scale(1.002);
+    box-shadow: var(--box-shadow-hover);
+}
