@@ -117,8 +117,8 @@ DL.forEach(dl => {
 
 MS.forEach(ms => {
     ms.addEventListener("click", () => {
-        document.querySelector(".mausac.border-3").classList.remove("border", "border-3", "border-color")
-        ms.classList.add("border", "border-3", "border-color")
+        document.querySelector(".mausac.border-color").classList.remove("border", "border-color")
+        ms.classList.add("border", "border-color")
 
 
         const tenms = ms.getAttribute("data-name");

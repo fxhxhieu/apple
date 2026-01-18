@@ -101,10 +101,11 @@ body {
     border: 2px solid #0066cc !important;
     padding: 2px;
     background-clip: content-box;
+    border-width: 3px !important;
 }
 
 .border-3 {
-    border-width: 3px !important;
+    
 }
 
 .mausac:hover {
@@ -177,7 +178,6 @@ body {
     padding: 2rem;
 }
 
-/* Media Query cho thiết bị di động */
 @media (max-width: 991px) {
     .sanpham_img {
         padding:0;
@@ -261,25 +261,7 @@ body {
     transform: translateY(0);
 }
 
-@media (max-width: 739px) {
-    /* Giảm khoảng cách phía trên trên mobile */
-    .product__description--display {
-        margin-top: 5rem !important;
-    }
 
-    /* Chỉnh lại cỡ chữ nhỏ hơn để không bị tràn màn hình */
-    .product__description--display--title {
-        font-size: 2.8rem !important;
-        padding-left: 1.5rem !important; /* Giảm padding trái */
-        text-align: center; /* Căn giữa chữ trên mobile */
-    }
-
-    /* Phóng to ảnh ra một chút trên mobile (75% thay vì 65%) */
-    .product__description--display--img {
-        width: 75% !important;
-        margin-top: 2rem !important; /* Đẩy ảnh xuống dưới chữ */
-    }
-}
 
 /* THIETKE_1 */
 .bgg,

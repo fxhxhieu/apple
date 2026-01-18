@@ -308,19 +308,10 @@ body {
     margin-top: 16px;
 }
 
-.box-btn:focus {
-    box-shadow: none;
-    border: none;
-}
-
 .benefit__title {
     font-size: 4.5rem;
     margin-left: 28px;
     margin-top: 36px;
-}
-
-.wrap-box {
-    max-width: 800px !important;
 }
 
 .benefits-box {
@@ -331,26 +322,5 @@ body {
 .benefits-box__title {
     font-size: 2rem;
     font-weight: 500;
-}
-
-.benefits-box__content {
-    font-size: 5.5rem;
-    font-weight: 600;
-    line-height: 6.2rem;
-    margin-top: 12px;
-}
-
-.benefits-box__subcontent {
-    font-size: 2rem;
-    font-weight: 400;
-    margin-top: 20px;
-}
-
-.modal.fade .modal-dialog {
-    transition: transform 0.8s ease;
-}
-
-.modal.show .modal-dialog {
-    transform: translate(0, 0);
 }
 
